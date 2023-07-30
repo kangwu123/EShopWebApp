@@ -28,5 +28,7 @@ namespace EShopWeb.API.DBContext
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<ProductCategory> ProductInCategories { get; set; }
         public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<Payment> Payments { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
     }
 }

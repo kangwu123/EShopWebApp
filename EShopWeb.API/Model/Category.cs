@@ -2,7 +2,7 @@
 
 namespace EShopWeb.API.Model
 {
-    public class Category
+    public class Category : BaseEntity
     {
         public int CatId { get; set; }
         public required string CatName { get; set; }

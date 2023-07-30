@@ -1,6 +1,8 @@
-﻿namespace EShopWeb.API.Model
+﻿using EShopWeb.SharedObject.Common;
+
+namespace EShopWeb.API.Model
 {
-    public class ProductCategory
+    public class ProductCategory : BaseEntity
     {
         public int ProductId { get; set; }
         public int CatId { get; set; }

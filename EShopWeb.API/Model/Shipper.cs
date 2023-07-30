@@ -1,6 +1,8 @@
-﻿namespace EShopWeb.API.Model
+﻿using EShopWeb.SharedObject.Common;
+
+namespace EShopWeb.API.Model
 {
-    public class Shipper
+    public class Shipper :BaseEntity
     {
         public int ShipperId { get; set; }
         public required string ShipperName { get; set; }

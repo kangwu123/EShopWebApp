@@ -2,7 +2,7 @@
 
 namespace EShopWeb.API.Model
 {
-    public class Product
+    public class Product : BaseEntity
     {
         public int ProductId { get; set; }
         public required string ProductName { get; set; }
@@ -12,9 +12,9 @@ namespace EShopWeb.API.Model
         public decimal? SalePrice { get; set; }
         public int Quantity { set; get; }
         public Confirm ProductStatus { get; set; }
-        public DateTime DateCreated { set; get; }
         public Confirm IsFeatured { get; set; }
         public int ViewCount { set; get; }
+        public int SuplierId { get; set; }
         public int  ProductCatId { get; set; }
         public required string SeoAlias { get; set; }
     }

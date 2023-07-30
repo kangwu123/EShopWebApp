@@ -1,13 +1,12 @@
 ﻿using EShopWeb.SharedObject.Common;
 namespace EShopWeb.API.Model
 {
-    public class Blog
+    public class Blog : BaseEntity
     {
         public int PostId { get; set; }
         public required string  TitleName { get; set; }
         public string? ShortDescription { get; set; }
         public required string ThumbImage { get; set; }
-        public DateTime? CreateDate { get; set; }
         public required string  Author { get; set; }
         public string? Tag { get; set; }
         public Confirm Published { get; set; }

@@ -2,7 +2,7 @@
 
 namespace EShopWeb.API.Model
 {
-    public class Transaction
+    public class Transaction : BaseEntity
     {
         public int Id { set; get; }
         public DateTime TransactionDate { set; get; }
